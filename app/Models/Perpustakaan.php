@@ -11,7 +11,7 @@ class Perpustakaan extends Model
 
     protected $fillable = ['nama', 'alamat', 'kota'];
 
-    public function bukus()
+    public function buku()
     {
         return $this->hasMany(Buku::class);
     }
